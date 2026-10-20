@@ -1,10 +1,8 @@
 package fr.visiplus.exercice;
 
-import java.util.List;
+import fr.visiplus.exercice.service.IUsernameProvider;
 
-import fr.visiplus.exercice.service.IService;
-
-public class User implements IService {
+public class User implements IUsernameProvider {
 
 	private String firstname;
 	private String lastname;
@@ -48,10 +46,6 @@ public class User implements IService {
 		this.lastname = lastname;
 		this.username = username;
 		this.password = password;
-	}
-
-	public List<User> sortUsersByUsername(List<User> users) throws Exception {
-		throw new Exception();
 	}
 
 	@Override
